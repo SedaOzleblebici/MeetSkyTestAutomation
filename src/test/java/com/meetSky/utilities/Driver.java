@@ -33,9 +33,8 @@ public class Driver {
                     options.setExperimentalOption("excludeSwitches",  Arrays.asList("disable-popup-blocking"));
                     options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
                     options.setExperimentalOption("useAutomationExtension", false);
-                    options.addArguments("--incognito");
+                    //options.addArguments("--incognito");
                     driver = new ChromeDriver(options);
-                    driver = new ChromeDriver();
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
